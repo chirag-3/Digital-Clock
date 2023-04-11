@@ -16,23 +16,25 @@
 }
 
 #time{
-    border:1px black solid;
+    /* border:1px black solid; */
     flex-basis: 70vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #clock{
     flex-basis: 100%;
-    flex-shrink: 0;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 #time-value{
-    flex-basis: 100%;
-    flex-shrink: 0;
+    flex-basis: 40%;
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,22 +44,57 @@
     text-align: center;
 }
 
-#time-value div{
+/* #time-value div{
     border:1px black solid;
-}
+} */
 
 #time-value > div{
-    height: 10vh;
+    height: 14vh;
+    width: 13vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #meridiem{
     display: flex;
+    text-align: left;
+    color: white;
+    font-weight: bold;
 }
 
 .value{
-    font-size: 44px;
+    font-size: 60px;
+    flex-grow: 1;
 }
 
+.value {
+    /* background-color: blueviolet; */
+    background-color: rgba(243, 8, 239, 0.2);
+    color: white;
+    /* opacity: 0.2; */
+}
+
+.precision{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    background-color: rgba(75, 45, 206, 0.466);
+    text-align: center;
+}
+
+#hour, #minute, #second {
+    display: flex;
+    flex-direction: column;
+}
+
+#meridiem span{
+    background-color: green;
+    width: 60px;
+    text-align: center;
+}
+
+#clock{
+    position: relative;
+    left:-40px;
+}
